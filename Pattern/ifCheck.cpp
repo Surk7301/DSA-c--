@@ -5,6 +5,7 @@ int score = 350;
 int balance;
 int marks;
 int sides;
+int number;
 int main()
 {
     // if(score>300){
@@ -44,15 +45,37 @@ int main()
     // }
 
     // triangle status
-    cout << "Enter the no. of sides: ";
-    cin >> sides;
+    // cout << "Enter the no. of sides: ";
+    // cin >> sides;
 
-    if (sides == 3)
-    {
-        cout << "It's a Triangle";
+    // if (sides == 3)
+    // {
+    //     cout << "It's a Triangle";
+    // }
+    // else
+    // {
+    //     cout << "Not a Triangle";
+    // }
+
+    // +ve, -ve, 0 check
+    // cout << "Enter a number: ";
+    // cin >> number;
+    // if(number > 0){
+    //     cout << "The number is positive" << endl;
+    // }else if(number < 0){
+    //     cout << "The number is negative" << endl;
+    // }else{
+    //     cout << "The number is zero" << endl;
+    // }
+
+
+    //odd or even check
+    cout << "Enter a number: ";
+    cin >> number;
+    if(number %2 ==0){
+        cout << "The number is even" << endl;
+    }else {
+        cout << "The number is odd" << endl;
     }
-    else
-    {
-        cout << "Not a Triangle";
-    }
+
 }
