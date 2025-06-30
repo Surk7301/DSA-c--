@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n = 5;
+    int n;
 
     // Square Pattern(n);
     // for (int i = 1; i <= n; i++)
@@ -46,9 +46,42 @@ int main()
 
 
     //half Pyramid Pattern(n);
-    for(int row =0; row<5; row++){
-        for(int col=0; col<row+1; col++){
-            cout << "* ";
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // for(int row =0; row<n; row++){
+    //     for(int col=0; col<row+1; col++){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Inverted Half Pyramid Pattern(n);
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // for(int row=0; row<n; row++){
+    //     for(int col=0; col<n-row; col++){
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Half Pyramid with Numbers Pattern(n);
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // for(int row=0; row<n; row++){
+    //     for(int col=0; col<row+1; col++){
+    //         cout << col+1 << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Inverted Half Pyramid with Numbers Pattern(n);
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int row=0; row<n; row++){
+        for(int col=0; col<n-row; col++){
+            cout << col+1 << " ";
         }
         cout << endl;
     }
